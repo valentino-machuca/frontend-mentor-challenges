@@ -1,0 +1,151 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    font-family: Outfit, sans-serif;
+}
+
+.box{
+    transition: 0.5s;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 4px -1px 41px -15px rgba(0,0,0,0.75);
+}
+
+.box:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+.box .img{
+    transition: 1s;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.box .img #nft-img{
+    transition: 0.5s;
+    background-color: hsl(215, 51%, 70%);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box .img:hover{
+    transition: 1s;
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+}
+
+.box .img:hover #nft-img{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.box .img #view{
+    transition: 0.5s;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.box .img:hover #view{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.box .info .data #title{
+    transition: 0.5s;
+    padding-top: 10px;
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+}
+
+.box .info .data #title:hover{
+    transition: 0.5s;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.box .info .data #paragraph{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+
+.box .info .price{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.box .info .price #eth{
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box .info .price #eth img{
+    vertical-align: bottom;
+    padding-right: 5px;
+}
+
+.box .info .price #time{
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box .info .price #time img{
+    padding-right: 5px;
+    vertical-align: bottom;
+}
+
+.box .autor {
+    padding-top: 10px;
+    width: 100%;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+
+.box .autor img{
+    vertical-align: bottom;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.box .autor #creation{
+    font-size: 12px;
+    padding-left: 15px;
+    color: hsl(215, 51%, 70%);
+
+}
+.box .autor #creation span{
+    transition: 0.5s;
+    font-weight: 300;
+    color: white;
+}
+
+.box .autor #creation span:hover{
+    transition: 0.5s;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
